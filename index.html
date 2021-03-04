@@ -7,24 +7,30 @@
     <title>Document</title>
 </head>
 <body>
-<form action="">
-    <label for="nombre">
-        <span>¿Cuál es tu nombre?</span>
-        <input type="text" name="nombre" id="nombre" autocomplete="name" required>
-    </label>
-    <label for="correo">
-        <span>¿Cuál es tu correo electrónico?</span>
-        <input type="email" name="correo" id="correo" autocomplete="email" required>
-    </label>
-    <label for="pais">
-        <span>¿En qué país vives?</span>
-        <input type="text" name="pais" id="pais" autocomplete="country" required>
-    </label>
-    <label for="cp">
-        <span>¿Cuál es tu código postal?</span>
-        <input type="text" name="cp" id="cp" autocomplete="postal-code" required>
-    </label>
-    <input type="submit" name="" id="">
+    <main>
+        <form action="">
+<fieldset>
+<legend><b>Select</b> (No es una buena práctica)</legend>
+    <select name="cursos" id="">
+        <option value="Javascript">Javascript</option>
+        <option value="HTML5">HTML5</option>
+        <option value="CSS3">CSS3</option>
+        <option value="Web Standards">Web Standards</option>
+    </select>
 </form>
+</fieldset>
+<form action="">
+    <fieldset>
+        <legend><b>Input list</b> (Es una buena práctica)</legend>
+        <input list="cursos">
+        <datalist id="cursos">
+            <option value="Javascript"></option>
+            <option value="HTML5"></option>
+            <option value="CCS3"></option>
+            <option value="Web Standards"></option>
+        </datalist>
+    </fieldset>
+</form>
+    </main>
 </body>
 </html>
