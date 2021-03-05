@@ -18,3 +18,34 @@ Ejemplo:
 #ID {
     estilos
 } */
+
+.main-nav {
+    margin-top: 10px;
+    list-style: none;
+    padding-left: 0 ;
+    background-color: #13a4a4;
+}
+
+.main-nav__item {
+    display: inline-block;
+}
+
+.main-nav__item a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+/* La pseudoclase HOVER, ACTIVE se usa para que al poner el mouse encima de un elemento este interactue con el usuario
+ */
+.main-nav__item a:hover {
+    color: blue;
+}
+
+.main-nav__item a:active {
+    color: red;
+}
+
+.main-nav__item a::after {
+    content: " | ";
+}
