@@ -19,7 +19,7 @@ Ejemplo:
     estilos
 } */
 
-.main-nav {
+/* .main-nav {
     margin-top: 10px;
     list-style: none;
     padding-left: 0 ;
@@ -28,24 +28,48 @@ Ejemplo:
 
 .main-nav__item {
     display: inline-block;
-}
+} */
 
-.main-nav__item a {
+/* .main-nav__item a {
     color: white;
     padding: 5px;
     text-decoration: none;
 }
-
-/* La pseudoclase HOVER, ACTIVE se usa para que al poner el mouse encima de un elemento este interactue con el usuario
  */
-.main-nav__item a:hover {
+/* La pseudoclase HOVER, ACTIVE se usa para que al poner el mouse encima de un elemento este interactue con el usuario
+   Para activar una pseudoclase se deben poner los dos puntos y luego la pseudoclase */
+/* .main-nav__item a:hover {
     color: blue;
 }
 
 .main-nav__item a:active {
     color: red;
+} */
+
+/* Para activar un pseudoelemento se deben poner los dobles dos puntos y luego el pseudoelemento.
+El pseudo elemento AFTER siver para agregar un elemento despues al elemento que se desea */
+
+/* .main-nav__item a::after {
+    content: " | ";
+} */
+
+/* Estilos de la clase Modelo de caja */
+
+/* El asterisco se usa para resetear caracteristicas del navegador no deseadas
+y la propiedad box-sizing con el argumento border-box lo que hace es adaptar la caja al navegador
+para no tener scroll */
+
+* { 
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
-.main-nav__item a::after {
-    content: " | ";
+
+
+main {
+    width: 100%;
+    height: 500px;
+    border: 10px solid grey;
+    padding: 20px 35px;
 }
