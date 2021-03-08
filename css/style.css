@@ -120,7 +120,40 @@ h1 {
     color: red;
 } */
 
-div  p {
+/* div  p {
     color: red;
+} */
+
+/* Clase de medidas  */
+*{
+    box-sizing: border-box;   /* Es muy importante hacer esto siempre!!!! */
+    margin: 0;
+    padding: 0;
 }
 
+/* html {
+    font-size: 62.5%;
+}
+
+p {
+    font-size: 1.6rem;
+}
+
+main div {
+    font-size: 1.6rem;
+} */
+
+main{
+    width: 100vw;
+    height: 100vh;
+    background-color: purple;
+}
+
+section {
+    width: 80%;
+    min-width: 320px;
+    max-width: 500px;
+    min-height: 500px;
+    margin: 0 auto;
+    background-color: red;
+}
