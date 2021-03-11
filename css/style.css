@@ -219,7 +219,7 @@ div div{
 
 /* Clase de Display y reto layout 1  */
 
-.header {
+/* .header {
     padding: 1rem;
     font-size: 2rem;
     background-color: rgba(112, 30, 105, 0.781);
@@ -283,5 +283,46 @@ div div{
 .derechos {
     position: relative;
     left: 3rem;
+} */
+
+/* Clase display-flex */
+
+body{
+    font-size: 1.6rem;
+    color: white;
+    font-weight: bold;
 }
 
+.container{
+    border: 0.3rem solid #000;
+    display: flex;
+/*  align-items: stretch; Esta propiedad tiene uso para estirar el contenido al 100% del container padre  
+    align-items: baseline; Esta propiedad tiene uso para que el contenido abarque solo el espacio necesario. */ 
+    flex-wrap: wrap;
+}
+
+.box {
+    height: 10rem;
+    flex-basis: 10rem;
+    flex-grow: 1;
+}
+
+.box1 {
+    background-color: blue;
+/*     flex-grow: 1; Esta propiedad se usa para rellenar el contenido faltante del contenedor. */
+}
+.box2 {
+    background-color: blueviolet;
+}
+.box3 {
+    background-color: burlywood;
+}
+.box4 {
+    background-color: cadetblue;
+}
+.box5 {
+    background-color: coral;
+}
+.box6 {
+    background-color: salmon;
+}
