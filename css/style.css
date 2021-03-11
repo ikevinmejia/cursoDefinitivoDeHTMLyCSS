@@ -161,7 +161,7 @@ section {
 } */
 
 /* Clase de position */
-main{
+/* main{
     width: 100%;
     min-width: 50rem;
     max-width: 100rem;
@@ -215,8 +215,73 @@ div div{
     font-size: 1.9rem;
     padding: 5rem 2rem 2rem;
     overflow: hidden;
+} */
+
+/* Clase de Display y reto layout 1  */
+
+.header {
+    padding: 1rem;
+    font-size: 2rem;
+    background-color: rgba(112, 30, 105, 0.781);
 }
-
-
-
+.header-content {
+    color: white;
+    font-weight: bold;
+    text-align: left;
+}
+.header-content p{
+    position: absolute;
+    padding: 0 2rem 0 2rem;
+}
+.nav {
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    text-align: right;
+}
+.nav li {
+    display: inline-block;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.main {
+    background-color: purple;
+}
+.sidebar {
+    font-size: 2.3rem;
+    display: inline-block;
+    background-color: rgb(195, 143, 197);
+}
+.sidebar div {
+    border-radius: 1rem;
+    padding: 5rem;
+    margin: 2rem;
+    background-color: pink;
+}
+.main-content{
+   position: absolute;
+   display: inline-block;
+   font-size: 3rem;
+   color: white;
+   font-weight: bold;
+   text-align: center;
+   padding: auto;
+}
+.footer {
+    font-size: medium;
+    background-color: rgb(205, 50, 171);
+    color: white;
+    font-weight: bold;
+    position: relative;
+    padding: 2rem;
+}
+.socio {
+    text-align: right;
+    position: absolute;
+    right: 3rem;
+}
+.derechos {
+    position: relative;
+    left: 3rem;
+}
 
