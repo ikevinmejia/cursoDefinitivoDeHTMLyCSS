@@ -287,7 +287,7 @@ div div{
 
 /* Clase display-flex */
 
-body{
+/* body{
     font-size: 1.6rem;
     color: white;
     font-weight: bold;
@@ -297,10 +297,10 @@ body{
     border: 0.3rem solid #000;
     display: flex;
 /*  align-items: stretch; Esta propiedad tiene uso para estirar el contenido al 100% del container padre  
-    align-items: baseline; Esta propiedad tiene uso para que el contenido abarque solo el espacio necesario. */ 
+    align-items: baseline; Esta propiedad tiene uso para que el contenido abarque solo el espacio necesario.
     flex-wrap: wrap;
-}
-
+}*/
+/*
 .box {
     height: 10rem;
     flex-basis: 10rem;
@@ -309,7 +309,7 @@ body{
 
 .box1 {
     background-color: blue;
-/*     flex-grow: 1; Esta propiedad se usa para rellenar el contenido faltante del contenedor. */
+     flex-grow: 1; Esta propiedad se usa para rellenar el contenido faltante del contenedor.
 }
 .box2 {
     background-color: blueviolet;
@@ -325,4 +325,62 @@ body{
 }
 .box6 {
     background-color: salmon;
+} */
+
+/* Clase de Mostly fluid */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.c1, .c2, .c3, .c4, .c5 {
+    width: 100%;
+    min-width: 150px;
+    height: 150px;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.c1 {
+    background-color: #003476;
+}
+.c2 {
+    background-color: #0062d2;
+}
+.c3 {
+    background-color: #b4d2f7;
+}
+.c4 {
+    background-color: #d5dfef;
+}
+.c5 {
+    background-color: #dfe1e5;
+}
+
+/* @media (min-width:600px) {
+    .c2, .c3, .c4 {
+        width: 50%;
+    }
+} */
+
+/* @media (min-width: 800px){
+   .container {
+       width: 800px;
+       margin-left: auto;
+       margin-right: auto;
+   } 
+    
+    .c1 {
+        width: 60%;
+    }
+    .c2 {
+        width: 40%;
+    }
+    .c3, .c4 {
+        width: 33%;
+    }
+    .c5 {
+        width: 34%;
+    }
+} */
