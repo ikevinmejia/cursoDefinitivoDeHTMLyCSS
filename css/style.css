@@ -35,8 +35,9 @@ html {
      color: black;
  }
 
-.important {
+.flex-container {
     display: flex;
+    height: auto;
 }
 
 
@@ -125,4 +126,32 @@ html {
      border-radius: 4rem;
      object-fit: contain;
      padding: 2rem;
+ }
+
+
+ /* ----------------------------------Footer---------------------------- */
+
+ .footer {
+     border: 1px solid red;
+     font-size: 1.2rem;
+     background-color:grey;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-between;
+     align-items: center;
+     height: 9rem;
+ }
+
+.social {
+    display: flex;
+    align-items: center;
+    order: 1;
+}
+
+.social-div {
+    width: 6rem;
+}
+
+ .social-img {
+     width: 100%;
  }
